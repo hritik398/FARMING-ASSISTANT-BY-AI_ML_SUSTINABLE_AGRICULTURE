@@ -1,0 +1,16 @@
+Add:
+
+IoT service fetching from Firebase RTDB.
+
+Image picker + TFLite disease detection.
+
+iot_service.dart
+
+import 'package:firebase_database/firebase_database.dart';
+
+class IotService {
+  static final db = FirebaseDatabase.instance.ref();
+  static Stream<DatabaseEvent> sensorStream(String deviceId) {
+    return db.child("sensors/$deviceId").limitToLast(1).onValue;
+  }
+}
