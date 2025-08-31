@@ -1,0 +1,14 @@
+import 'package:firebase_storage/firebase_storage.dart';
+
+Future<String> uploadImage(File file) async {
+  final ref = FirebaseStorage.instance.ref("leaves/${DateTime.now()}.jpg");
+  await ref.putFile(file);
+  return await ref.getDownloadURL();
+}
+
+
+Final UI:
+
+Dashboard shows live IoT tiles, disease detection result, and history from Firestore.
+
+Push notification alerts when soil moisture < threshold.
