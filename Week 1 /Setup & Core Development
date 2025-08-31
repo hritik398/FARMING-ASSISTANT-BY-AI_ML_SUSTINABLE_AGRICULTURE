@@ -1,0 +1,17 @@
+🔹 Goal: Build project foundation and basic UI with Firebase integration
+
+Install and configure Flutter & Firebase (flutterfire configure).
+
+Set up project structure (folders, routing, screens).
+
+Implement Firebase Authentication (login/register/logout).
+
+Create basic UI: Splash, Login, Register, Dashboard skeleton.
+
+Connect Firebase Firestore + Realtime Database.
+
+Design mock IoT data structure in Firebase.
+
+Test app with static dummy data.
+
+Deliverable: Working app with user login, dashboard screen, and Firebase connectivity.
