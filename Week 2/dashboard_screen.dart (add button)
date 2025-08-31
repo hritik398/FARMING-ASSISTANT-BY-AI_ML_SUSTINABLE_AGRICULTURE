@@ -1,0 +1,7 @@
+ElevatedButton(
+  onPressed: () async {
+    final label = await DiseaseModel.predict(File("dummy.jpg"));
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Detected: $label")));
+  },
+  child: const Text("Scan Leaf"),
+),
