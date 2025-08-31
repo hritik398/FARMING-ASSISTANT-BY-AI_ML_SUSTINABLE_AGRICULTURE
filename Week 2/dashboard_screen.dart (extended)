@@ -1,0 +1,15 @@
+import 'dart:io';
+import 'package:tflite_flutter/tflite_flutter.dart';
+
+class DiseaseModel {
+  static Interpreter? _interpreter;
+  static Future<void> load() async {
+    _interpreter ??= await Interpreter.fromAsset("model.tflite");
+  }
+
+  static Future<String> predict(File file) async {
+    // Simplified placeholder: return dummy label
+    await load();
+    return "Leaf Blight"; 
+  }
+}
