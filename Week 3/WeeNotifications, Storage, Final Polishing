@@ -1,0 +1,20 @@
+Add Firebase Messaging for push notifications.
+
+Save captured images in Firebase Storage.
+
+Improve UI and finalize.
+
+messaging_service.dart (short)
+
+import 'package:firebase_messaging/firebase_messaging.dart';
+
+class MessagingService {
+  static Future<void> init() async {
+    final fcm = FirebaseMessaging.instance;
+    await fcm.requestPermission();
+    fcm.getToken().then((t) => print("FCM token: $t"));
+    FirebaseMessaging.onMessage.listen((m) {
+      print("Push: ${m.notification?.title}");
+    });
+  }
+}
