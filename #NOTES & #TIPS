@@ -1,0 +1,10 @@
+- For proper normalization, adapt `DiseaseModel` preprocessing to your model.
+- Upload detected images to Firebase Storage and store the download URL in
+Firestore if needed.
+
+
+Tips
+Convert your PyTorch/TensorFlow model to TFLite with dynamic range or float16 quantization for
+speed.
+Keep input size small (e.g., 224x224) and add normalization ops matching training.
+Ensure label order matches output indices.
