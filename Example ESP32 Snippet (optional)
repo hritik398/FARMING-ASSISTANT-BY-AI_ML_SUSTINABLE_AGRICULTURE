@@ -1,0 +1,13 @@
+// Pseudo-code: publish sensor values to Firebase RTDB
+#include <WiFi.h>
+#include <Firebase_ESP_Client.h>
+void loop() {
+float temperature = readTemp();
+float humidity = readHumidity();
+int moisture = readSoil();
+String path = "/sensors/demo-device-001/" + String((long)time(NULL));
+Firebase.RTDB.setFloat(&fbdo, path + "/temperature", temperature);
+Firebase.RTDB.setFloat(&fbdo, path + "/humidity", humidity);
+Firebase.RTDB.setInt(&fbdo, path + "/moisture", moisture);
+delay(5000);
+}
