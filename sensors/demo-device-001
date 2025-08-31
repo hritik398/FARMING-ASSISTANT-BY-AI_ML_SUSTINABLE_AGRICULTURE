@@ -1,0 +1,7 @@
+demo-device-001/ 1725091800: { temperature: 27.8, humidity: 66.2, moisture: 540 }
+
+Use ESP32/Arduino to `POST` or SDK to write to this path.
+## Notifications
+- `firebase_messaging` is initialized. For production, add push certificates
+(iOS) and FCM configs.
+## Running
