@@ -1,0 +1,85 @@
+📱 Project: Farming Assistant – Smart Farming App
+🔹 Project Overview
+
+Farming Assistant is an AI and IoT-powered smart farming mobile application designed to help farmers detect plant diseases, monitor crop health, and optimize agricultural practices. 
+The app leverages IoT devices (sensors for soil, temperature, humidity, moisture) and AI/ML models for plant disease detection through leaf image analysis. 
+Built using Flutter for cross-platform support and Firebase for real-time database, authentication, and cloud storage, the system provides farmers with instant insights, notifications, and 
+recommendations to improve productivity.
+
+
+
+### 🔹 Objectives
+
+* Detect plant diseases using AI/ML models from crop leaf images.
+* Monitor soil health and environmental conditions via IoT sensors.
+* Provide farmers with real-time alerts and recommendations.
+* Store and manage farm data securely with Firebase.
+* Support multilingual interface for easy adoption by rural farmers.
+
+---
+
+### 🔹 Key Features
+
+1. **IoT Integration**
+
+   * Soil moisture, temperature, and humidity monitoring.
+   * Automatic irrigation alerts.
+
+2. **AI-Powered Plant Disease Detection**
+
+   * Leaf image upload or live camera scan.
+   * AI/ML model predicts disease type with confidence score.
+   * Suggests preventive and curing measures.
+
+3. **Farmer Dashboard**
+
+   * Crop health overview.
+   * Real-time IoT sensor data visualization.
+   * Notifications & recommendations.
+
+4. **Firebase Backend**
+
+   * Authentication (Email/Phone/Google login).
+   * Real-time database for crop & sensor data.
+   * Cloud Firestore for storing disease records.
+   * Push notifications using Firebase Cloud Messaging.
+
+5. **User-Friendly Interface (Flutter)**
+
+   * Lightweight and multilingual.
+   * Works on Android & iOS.
+
+---
+
+### 🔹 Technology Stack
+
+* **Frontend (Mobile App):** Flutter (Dart)
+* **Backend:** Firebase (Authentication, Firestore, Realtime DB, Cloud Functions, FCM)
+* **AI/ML:** TensorFlow Lite / PyTorch Mobile (for disease detection)
+* **IoT:** Arduino / ESP32 with sensors (Soil moisture, Temperature, Humidity)
+* **Cloud Storage:** Firebase Storage for leaf images
+* **API Integration:** REST APIs for weather and crop data
+
+---
+
+### 🔹 System Architecture
+
+1. **IoT Sensors → Firebase Realtime Database** (for live crop/soil data).
+2. **Mobile App (Flutter)** fetches data from Firebase.
+3. **AI/ML Model (TFLite)** embedded in the app for disease detection.
+4. **Disease data + Sensor data** stored in Firebase.
+5. **User gets recommendations + notifications** on crop health.
+
+---
+
+### 🔹 Expected Outcomes
+
+* Early detection of crop diseases → reduced crop loss.
+* Automated monitoring of soil & environment.
+* Better decision-making for irrigation & pesticide use.
+* Increased crop yield and farmer profit.
+* Scalable solution for smart agriculture.
+
+---
+
+
